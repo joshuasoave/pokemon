@@ -18,9 +18,6 @@ $(() => {
         //change the name of selected pokemon
         let pkmName = data.name
         // console.log(pkmName);
-        //give it a class
-        pkmName.addClass('name')
-        //assign the text of name to pkmn name 
         $('#name').text(pkmName)
         //get the pokemon's type and attach as text to p tag
         const types = data.types
@@ -47,6 +44,14 @@ $(() => {
         }
         //check if users input matches the pokemon name
         const checkMatch = (event) => {
+            //hide the correct and wrong answer messages
+            const $correctAnswer = $('.correct-answer')
+            const $wrongAnswer = $('.wrong-answer')
+
+            //set their displays to none
+            $correctAnswer.css('display', 'none')
+            $wrongAnswer.css('display', 'none')
+
             event.preventDefault()
             //store the input as a variable
             const $userGuess = $('input').val()
@@ -56,9 +61,14 @@ $(() => {
             $userGuess.toLowerCase()
             //check to see if the guesses match
             if($userGuess === pkmName) {
-              console.log('correct!');
+              // console.log('correct!');
+              //show the win results
+              $correctAnswer.toggle()
             } else {
-              console.log(`Nope, this Pokemon's name is ${pkmName}. You'll get it right next time!`);
+              //change the text of results name to current pokemon's name
+              $('.name').text(`${pkmName}`);
+              //toggle the lose message
+              $wrongAnswer.toggle()
             }
           }
         //give the submit area a listener that checks for match
