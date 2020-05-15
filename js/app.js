@@ -46,8 +46,21 @@ $(() => {
           console.log('Sorry, an error has occured!');
       })//end of err
   }
+
+  //show hint modal function
+  const showHint = () => {
+    //grab hint modal
+    const $hintModal = $('.hint-modal')
+    //togge the display of hint modal
+    $hintModal.toggle()
+    //hide the name
+    $('.pkmn-name').css('display', 'none')
+  }
+
       //give the whos that pokemon button a listener to   produce the random pokemon
   $('#randomizer').on('click', producePokemon)
+  //give the hint button a toggle for modal
+  $('#hint').on('click', showHint)
 
       //end of on doc load
 })

@@ -1,3 +1,7 @@
+.hint-modal {
+  display: none;
+}
+
 #name {
   text-transform: capitalize;
 }
