@@ -9,6 +9,9 @@ $(() => {
       url: "https://pokeapi.co/api/v2/pokemon/" + number,
       type: "GET",
     }).then((data) => {
+        //remove the previous abilities and types
+        $('#type-h3').siblings().remove()
+        $('#ability-h3').siblings().remove()
         // console.log(data);
         //change src of sprite to the selected pokemon
         $('img').attr("src", data.sprites.front_default)
