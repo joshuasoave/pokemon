@@ -16,8 +16,11 @@ $(() => {
         //change src of sprite to the selected pokemon
         $('img').attr("src", data.sprites.front_default)
         //change the name of selected pokemon
-        const pkmName = data.name
+        let pkmName = data.name
         // console.log(pkmName);
+        //give it a class
+        pkmName.addClass('name')
+        //assign the text of name to pkmn name 
         $('#name').text(pkmName)
         //get the pokemon's type and attach as text to p tag
         const types = data.types
@@ -40,7 +43,26 @@ $(() => {
           const $newAbility = $('<p>').text(pkmnAbilities)
           //append them to the ability h3
           $('.abilities').append($newAbility)
+          //
         }
+        //check if users input matches the pokemon name
+        const checkMatch = (event) => {
+            event.preventDefault()
+            //store the input as a variable
+            const $userGuess = $('input').val()
+            // console.log($userGuess);
+            // console.log(pkmName);;
+            //lowercase the guess since data is
+            $userGuess.toLowerCase()
+            //check to see if the guesses match
+            if($userGuess === pkmName) {
+              console.log('correct!');
+            } else {
+              console.log(`Nope, this Pokemon's name is ${pkmName}. You'll get it right next time!`);
+            }
+          }
+        //give the submit area a listener that checks for match
+        $('form').on('submit', checkMatch)
         //end of then
       }).catch((error) => {
           console.log('Sorry, an error has occured!');
@@ -57,10 +79,15 @@ $(() => {
     $('.pkmn-name').css('display', 'none')
   }
 
+
+
       //give the whos that pokemon button a listener to   produce the random pokemon
   $('#randomizer').on('click', producePokemon)
   //give the hint button a toggle for modal
   $('#hint').on('click', showHint)
+
+
+
 
       //end of on doc load
 })
