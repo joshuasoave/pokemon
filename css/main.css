@@ -10,13 +10,45 @@
     height: 90vh;
     display: flex;
     flex-direction: column;
-    margin: 3em;
+    margin: 0;
   }
 
-  #hint{
+  header {
     background: #ffcb05;
-    border: 2px solid white;
+    text-align: center;
+    color:  #2a75bb;
+    letter-spacing: .05em;
+  }
+
+  header h1 {
+    text-shadow: 1px 2px whitesmoke;
+  }
+
+  .container {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  .normal-hint {
+    background: #ffcb05;
     color: #3c5aa6;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 14px;
+    width: 60px;
+    letter-spacing: .05em;
+    border: 1px solid #3c5aa6;
+    box-shadow: 1px 3px #3c5aa6;
+  }
+
+  .rocket-hint {
+    background: black;
+    color: white;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 14px;
+    width: 60px;
+    letter-spacing: .05em;
+    border: 1px solid rgba(256,0,10,1);
+    box-shadow: 1px 3px rgba(256,0,10,1);
   }
 
   .hint-modal {
@@ -90,12 +122,12 @@
     height: 40px;
     width: 70px;
     background: black;
-    color: rgba(256,0,10,1);
-    border: 2px solid white;
+    color: white;
+    border: 2px solid rgba(256,0,10,1);
     font-family: 'Fjalla One', sans-serif;
     font-size: 18px;
     letter-spacing: .05em;
-    box-shadow: 1px 1px whitesmoke;
+    box-shadow: 1px 2px rgba(256,0,10,1);
   }
 
   .team-rocket {
@@ -111,11 +143,12 @@
 
   #rocket-mode {
     background: black;
-    border: 2px solid white;
-    color: rgba(256,0,10,1);
+    border: 2px solid rgba(256,0,10,1);
+    color: white;
     font-size: 18px;
     font-family: 'Fjalla One', sans-serif;
     height: 35px;
+    box-shadow: 1px 3px rgba(256,0,10,1);
   }
 
   #normal-mode {
@@ -126,6 +159,7 @@
     font-family: 'Fjalla One', sans-serif;
     height: 30px;
     border: 2px solid #3c5aa6;
+    box-shadow: 1px 3px #3c5aa6;
   }
 
 }

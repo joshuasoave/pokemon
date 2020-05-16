@@ -1,6 +1,7 @@
 $(() => {
 
   const producePokemon = () => {
+
       //randomize for the amount of pokemon
     let number = Math.floor(Math.random() * 809 + 1)
       //make a ajax call based on that number
@@ -9,6 +10,9 @@ $(() => {
       url: "https://pokeapi.co/api/v2/pokemon/" + number,
       type: "GET",
     }).then((data) => {
+        //hide the previous message
+        $('.correct-answer').hide()
+        $('.wrong-answer').hide()
         //remove the previous abilities and types
         $('#type-h3').siblings().remove()
         $('#ability-h3').siblings().remove()
@@ -69,6 +73,8 @@ $(() => {
               // console.log('correct!');
               //show the win results
               $correctAnswer.show()
+              //reset the form
+              $('form').trigger('reset')
             } else {
               //change the text of results name to current pokemon's name
               $('.name').text(`${pkmName}.`);
@@ -76,6 +82,8 @@ $(() => {
               $('.submit-form').hide()
               //toggle the lose message
               $wrongAnswer.show()
+              //reset the form
+              $('form').trigger('reset')
             }
           }
         //give the submit area a listener that checks for match
@@ -111,6 +119,8 @@ $(() => {
     //change the modal close class
     $('#close-btn').removeClass('close-btn')
     $('#close-btn').addClass('rocket-btn')
+    //change the hint to rocket class
+    $('#hint').addClass('rocket-hint')
     //hide rocket style button
     $('.team-rocket').hide()
     //show the normal style
@@ -124,6 +134,8 @@ $(() => {
     //change the modal close class
     $('#close-btn').removeClass('rocket-btn')
     $('#close-btn').addClass('close-btn')
+    //remove the hint rocket class
+    $('#hint').removeClass('rocket-hint')
     //hide noamral style button
     $('.normal-style').hide()
     //show the rocket style button
