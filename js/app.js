@@ -96,13 +96,21 @@ $(() => {
     $('.pkmn-name').css('display', 'none')
   }
 
+  const closeHint = () => {
+    //grab the close btn
+    const $hintModal = $('.hint-modal')
+    //close the hint modal
+    $hintModal.hide()
+
+  }
 
 
       //give the whos that pokemon button a listener to   produce the random pokemon
   $('#randomizer').on('click', producePokemon)
   //give the hint button a toggle for modal
   $('#hint').on('click', showHint)
-
+  //give the close button a way to hide the modal
+  $('#close-btn').on('click', closeHint)
 
 
 
