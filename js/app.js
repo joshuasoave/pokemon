@@ -13,6 +13,7 @@ $(() => {
         $('#type-h3').siblings().remove()
         $('#ability-h3').siblings().remove()
         // console.log(data);
+        $('.submit-form').show()
         //change src of sprite to the selected pokemon
         $('img').attr("src", data.sprites.front_default)
         //change the name of selected pokemon
@@ -61,12 +62,18 @@ $(() => {
             $userGuess.toLowerCase()
             //check to see if the guesses match
             if($userGuess === pkmName) {
+              //change the text of results name to current pokemon's name
+              $('.name').text(`${pkmName}!`);
+              //hide the submit answer area
+              $('.submit-form').hide()
               // console.log('correct!');
               //show the win results
               $correctAnswer.toggle()
             } else {
               //change the text of results name to current pokemon's name
-              $('.name').text(`${pkmName}`);
+              $('.name').text(`${pkmName}.`);
+              //hide the submit answer area
+              $('.submit-form').hide()
               //toggle the lose message
               $wrongAnswer.toggle()
             }

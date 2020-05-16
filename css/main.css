@@ -2,6 +2,10 @@
   display: none;
 }
 
+.submit-form {
+  display: none;
+}
+
 .correct-answer {
   display: none;
 }
