@@ -13,7 +13,7 @@
     margin: 0;
   }
 
-  header {
+  .normal-header {
     background: #ffcb05;
     text-align: center;
     color:  #2a75bb;
@@ -21,7 +21,7 @@
     border: 2px solid #3c5aa6;
   }
 
-  header h1 {
+  .normal-header h1 {
     text-shadow: 1px 2px whitesmoke;
     font-size: 44px;
     background: white;
@@ -30,7 +30,7 @@
     margin-left: 25%;
   }
 
-  nav ul {
+  .normal-nav ul {
     list-style: none;
     display: flex;
     justify-content: space-around;
@@ -39,10 +39,44 @@
     background: #3c5aa6;
   }
 
-  nav li {
+  .normal-nav li {
     color: white;
     padding: .2em;
   }
+
+              /* ROCKET MOBILE HEADER  */
+  .rocket-header {
+    background: black;
+    text-align: center;
+    color:  white;
+    letter-spacing: .05em;
+    border: 2px solid rgba(256,0,10,1);
+  }
+
+  .rocket-header h1 {
+    text-shadow: 1px 2px rgba(256,0,10,1);
+    font-size: 44px;
+    background: black;
+    font-family: 'Ubuntu Condensed',serif;
+    width: 50%;
+    margin-left: 25%;
+  }
+
+  .rocket-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 0;
+    border-top: 1px solid whitesmoke;
+    background: rgba(256,0,10,1);
+  }
+
+  .rocket-nav li {
+    color: white;
+    padding: .2em;
+  }
+
+/* normal container */
 
   .container {
     margin-left: 1em;
@@ -53,6 +87,10 @@
     align-items: center;
   }
 
+  /* rocket container */
+
+  /* normal mobile hints  */
+
   .normal-hint {
     background: #ffcb05;
     color: #3c5aa6;
@@ -62,17 +100,6 @@
     letter-spacing: .05em;
     border: 1px solid #3c5aa6;
     box-shadow: 1px 3px #3c5aa6;
-  }
-
-  .rocket-hint {
-    background: black;
-    color: white;
-    font-family: 'Fjalla One', sans-serif;
-    font-size: 14px;
-    width: 60px;
-    letter-spacing: .05em;
-    border: 1px solid rgba(256,0,10,1);
-    box-shadow: 1px 3px rgba(256,0,10,1);
   }
 
   .hint-modal {
@@ -87,6 +114,8 @@
     left: 0;
     align-items: center;
   }
+
+
 
   .modal-textbox {
     background: white;
@@ -104,6 +133,43 @@
     color: rgb(42, 117, 187);
     box-shadow: 5px 7px #3c5aa6;
   }
+
+  .close-btn {
+    align-self: flex-end;
+    margin: 1em;
+    margin-bottom: -1em;
+    height: 40px;
+    width: 70px;
+    background: #ffcb05;
+    border: 2px solid white;
+    color: #3c5aa6;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 18px;
+    letter-spacing: .05em;
+    border: 1px solid #3c5aa6;
+    box-shadow: 1px 3px #3c5aa6;
+  }
+
+
+  .normal-style {
+    align-self: flex-end;
+    justify-content: flex-end;
+    display: none;
+  }
+
+  #normal-mode {
+    background: #ffcb05;
+    border: 2px solid white;
+    color: #3c5aa6;
+    font-size: 18px;
+    font-family: 'Fjalla One', sans-serif;
+    height: 30px;
+    border: 2px solid #3c5aa6;
+    box-shadow: 1px 3px #3c5aa6;
+  }
+
+
+/* ROCKET MOBILE HINTS  */
 
   .rocket-modal {
     background: white;
@@ -123,20 +189,15 @@
     box-shadow: 5px 7px rgba(256,0,10,1);
   }
 
-  .close-btn {
-    align-self: flex-end;
-    margin: 1em;
-    margin-bottom: -1em;
-    height: 40px;
-    width: 70px;
-    background: #ffcb05;
-    border: 2px solid white;
-    color: #3c5aa6;
+  .rocket-hint {
+    background: black;
+    color: white;
     font-family: 'Fjalla One', sans-serif;
-    font-size: 18px;
+    font-size: 14px;
+    width: 60px;
     letter-spacing: .05em;
-    border: 1px solid #3c5aa6;
-    box-shadow: 1px 3px #3c5aa6;
+    border: 1px solid rgba(256,0,10,1);
+    box-shadow: 1px 3px rgba(256,0,10,1);
   }
 
   .rocket-btn {
@@ -159,12 +220,6 @@
     justify-content: flex-end;
   }
 
-  .normal-style {
-    align-self: flex-end;
-    justify-content: flex-end;
-    display: none;
-  }
-
   #rocket-mode {
     background: black;
     border: 2px solid rgba(256,0,10,1);
@@ -173,17 +228,6 @@
     font-family: 'Fjalla One', sans-serif;
     height: 35px;
     box-shadow: 1px 3px rgba(256,0,10,1);
-  }
-
-  #normal-mode {
-    background: #ffcb05;
-    border: 2px solid white;
-    color: #3c5aa6;
-    font-size: 18px;
-    font-family: 'Fjalla One', sans-serif;
-    height: 30px;
-    border: 2px solid #3c5aa6;
-    box-shadow: 1px 3px #3c5aa6;
   }
 
 }

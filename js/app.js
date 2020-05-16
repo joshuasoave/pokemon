@@ -113,6 +113,12 @@ $(() => {
   }
 
   const rocketStyle = () => {
+    //remove the normal class from header and nav
+    $('header').removeClass('normal-header')
+    $('nav').removeClass('normal-nav')
+    //add the rocket class
+    $('header').addClass('rocket-header')
+    $('nav').addClass('rocket-nav')
     //change modal class to rocket
     $('#modal-text').removeClass('modal-textbox')
     $('#modal-text').addClass('rocket-modal')
@@ -128,6 +134,12 @@ $(() => {
   }
 
   const normalStyle = () => {
+    //remove the rocket class from header and nav
+    $('header').removeClass('rocket-header')
+    $('nav').removeClass('rocket-nav')
+    //add the normal class
+    $('header').addClass('normal-header')
+    $('nav').addClass('normal-nav')
     //change modal class to normal
     $('#modal-text').removeClass('rocket-modal')
     $('#modal-text').addClass('modal-textbox')
