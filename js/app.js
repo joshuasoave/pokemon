@@ -104,6 +104,15 @@ $(() => {
 
   }
 
+  const rocketStyle = () => {
+    //change modal class to rocket
+    $('#modal-text').removeClass('modal-textbox')
+    $('#modal-text').addClass('rocket-modal')
+    //change the modal close class
+    $('#close-btn').removeClass('close-btn')
+    $('#close-btn').addClass('rocket-btn')
+  }
+
 
       //give the whos that pokemon button a listener to   produce the random pokemon
   $('#randomizer').on('click', producePokemon)
@@ -111,6 +120,8 @@ $(() => {
   $('#hint').on('click', showHint)
   //give the close button a way to hide the modal
   $('#close-btn').on('click', closeHint)
+  //team rocket mode
+  $('#rocket-mode').on('click', rocketStyle)
 
 
 
