@@ -8,26 +8,30 @@
     <script src="js/app.js" charset="utf-8"></script>
     <title></title>
   </head>
-  <body>
+  <body class="normal-body">
     <header class="normal-header">
       <h1>Who's That Pokemon?</h1>
       <nav class="normal-nav">
         <ul>
-          <li>About</li>
-          <li>Isle of Armor</li>
-          <li>Frozen Tundra</li>
+          <li><a href="#" id="about-link">About</a></li>
+          <li><a href="https://swordshield.pokemon.com/en-us/expansionpass/setting-of-new-adventure/" target="blank">Isle of Armor</a></li>
+          <li><a href="https://swordshield.pokemon.com/en-us/expansionpass/setting-of-new-adventure/" target="blank">Crown Tundra</a></li>
         </ul>
 
       </nav>
     </header>
 
-    <div class="container">
-      <div class="description">
-        <p>This is a game to help you test your Pokemon knowledge and learn about new Pokemon before Isle of Armor and Frozen Tundra come out. Click the button below to start playing!</p>
+    <div class="container" id="container">
+
+      <div class="about-modal" id="about-modal">
+        <div class="modal-textbox" id="about-text">
+          <p>This is a game to help you test your Pokemon knowledge and learn about new Pokemon before Isle of Armor and Crown Tundra come out.</p> <p>Click the button below to start playing!</p>
+          <button type="button" id="close-abt" class="close-btn">Close</button>
+        </div>
       </div>
 
       <div class="wtp-button">
-        <button type="button" id="randomizer">Who's That Pokemon?</button>
+        <button type="button" class="normal-randomizer" id="randomizer">Who's That Pokemon?</button>
       </div>
 
       <div class="current-pokemon">
@@ -37,7 +41,7 @@
       <div class="submit-form">
         <form>
           <input type="text" placeholder="Name this pokemon">
-          <button type="submit">Submit</button>
+          <button type="submit" class="normal-submit">Submit</button>
         </form>
         <button type="button" id="hint" class="normal-hint">Hint</button>
       </div>

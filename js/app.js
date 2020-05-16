@@ -105,7 +105,7 @@ $(() => {
   }
 
   const closeHint = () => {
-    //grab the close btn
+    //grab the hint modal
     const $hintModal = $('.hint-modal')
     //close the hint modal
     $hintModal.hide()
@@ -119,9 +119,18 @@ $(() => {
     //add the rocket class
     $('header').addClass('rocket-header')
     $('nav').addClass('rocket-nav')
+    //change container class to rocket
+    $('body').removeClass('normal-body')
+    $('body').addClass('rocket-body')
     //change modal class to rocket
     $('#modal-text').removeClass('modal-textbox')
     $('#modal-text').addClass('rocket-modal')
+    //change about modal class to rocket
+    $('#about-text').removeClass('modal-textbox')
+    $('#about-text').addClass('rocket-modal')
+    //change the about modal close class to rocket
+    $('#close-abt').removeClass('close-btn')
+    $('#close-abt').addClass('rocket-btn')
     //change the modal close class
     $('#close-btn').removeClass('close-btn')
     $('#close-btn').addClass('rocket-btn')
@@ -140,9 +149,18 @@ $(() => {
     //add the normal class
     $('header').addClass('normal-header')
     $('nav').addClass('normal-nav')
-    //change modal class to normal
+    //change container class to rocket
+    $('body').removeClass('rocket-body')
+    $('body').addClass('normal-body')
+    //change hint modal class to normal
     $('#modal-text').removeClass('rocket-modal')
     $('#modal-text').addClass('modal-textbox')
+    //change about modal class to normal
+    $('#about-text').removeClass('rocket-modal')
+    $('#about-text').addClass('modal-textbox')
+    //change the about modal close class
+    $('#close-abt').removeClass('rocket-btn')
+    $('#close-abt').addClass('close-btn')
     //change the modal close class
     $('#close-btn').removeClass('rocket-btn')
     $('#close-btn').addClass('close-btn')
@@ -152,6 +170,19 @@ $(() => {
     $('.normal-style').hide()
     //show the rocket style button
     $('.team-rocket').show()
+  }
+
+  const displayAbout = () => {
+    //reveal the about modal
+    $('.about-modal').show()
+  }
+
+  const closeAbout = () => {
+    //grab the about modal
+    const $aboutModal = $('.about-modal')
+    //close the about modal
+    $aboutModal.hide()
+
   }
 
       //give the whos that pokemon button a listener to   produce the random pokemon
@@ -164,6 +195,10 @@ $(() => {
   $('#rocket-mode').on('click', rocketStyle)
   //normal mode
   $('#normal-mode').on('click', normalStyle)
+  //about listener
+  $('#about-link').on('click', displayAbout)
+  //close about listener
+  $('#close-abt').on('click', closeAbout)
 
 
 
