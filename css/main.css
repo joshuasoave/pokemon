@@ -18,15 +18,39 @@
     text-align: center;
     color:  #2a75bb;
     letter-spacing: .05em;
+    border: 2px solid #3c5aa6;
   }
 
   header h1 {
     text-shadow: 1px 2px whitesmoke;
+    font-size: 44px;
+    background: white;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    width: 50%;
+    margin-left: 25%;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 0;
+    border-top: 1px solid whitesmoke;
+    background: #3c5aa6;
+  }
+
+  nav li {
+    color: white;
+    padding: .2em;
   }
 
   .container {
     margin-left: 1em;
     margin-right: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .normal-hint {
