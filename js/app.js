@@ -136,6 +136,9 @@ $(() => {
     $('#close-btn').addClass('rocket-btn')
     //change the hint to rocket class
     $('#hint').addClass('rocket-hint')
+    //change the submit button to rocket class
+    $('#submit-btn').removeClass('normal-submit')
+    $('#submit-btn').addClass('rocket-submit')
     //hide rocket style button
     $('.team-rocket').hide()
     //show the normal style
@@ -149,7 +152,7 @@ $(() => {
     //add the normal class
     $('header').addClass('normal-header')
     $('nav').addClass('normal-nav')
-    //change container class to rocket
+    //change container class to normal
     $('body').removeClass('rocket-body')
     $('body').addClass('normal-body')
     //change hint modal class to normal
@@ -166,6 +169,9 @@ $(() => {
     $('#close-btn').addClass('close-btn')
     //remove the hint rocket class
     $('#hint').removeClass('rocket-hint')
+    //change the submit button to normal class
+    $('#submit-btn').removeClass('rocket-submit')
+    $('#submit-btn').addClass('normal-submit')
     //hide noamral style button
     $('.normal-style').hide()
     //show the rocket style button

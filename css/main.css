@@ -101,12 +101,14 @@
 
   /* who's that pokemon normal button  */
   .normal-randomizer {
-    background: #3c5aa6;
-    color: white;
+    background: #ffcb05;
+    color: #3c5aa6;
     width: 200px;
     height: 70px;
     font-size: 26px;
-    box-shadow: 1px 3px #3c5aa6;
+    box-shadow: 3px 5px #3c5aa6;
+    font-family: 'Fjalla One', sans-serif;
+    margin: 2em;
   }
 
   /* applies to both modals  */
@@ -222,7 +224,7 @@
     font-size: 18px;
   }
 
-  .rocket-hint {
+  .rocket-hint, .rocket-submit {
     background: black;
     color: white;
     font-family: 'Fjalla One', sans-serif;
