@@ -1,3 +1,5 @@
+/* global variables for the game to work on mobile and desktop DONT EDIT*/
+
 .hint-modal {
   display: none;
 }
@@ -26,3 +28,68 @@
 .abilities {
   text-transform: capitalize;
 }
+
+/*///////////////////*/
+/* mobile styling  */
+/*///////////////////*/
+
+@media only screen and (max-width: 600px) {
+
+  #hint{
+    background: #ffcb05;
+    border: 2px solid white;
+    color: #3c5aa6;
+  }
+
+  .hint-modal {
+    display: flex;
+    background-color: rgba(0,0,0,0.4);
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    align-items: center;
+  }
+
+  .modal-textbox {
+    background: white;
+    width: 70%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #3c5aa6;
+    color: rgb(42, 117, 187);
+    box-shadow: 5px 7px #3c5aa6;
+  }
+
+  #close-btn {
+    align-self: flex-end;
+    margin: 1em;
+    margin-bottom: -1em;
+    height: 40px;
+    width: 70px;
+    background: #ffcb05;
+    border: 2px solid white;
+    color: #3c5aa6;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 18px;
+    letter-spacing: .05em;
+    border: 1px solid #3c5aa6;
+    box-shadow: 1px 3px #3c5aa6;
+  }
+}
+
+
+
+/* //team rocket
+background: rgba(256,0,10,1);
+border: 2px solid black;
+color: white; */

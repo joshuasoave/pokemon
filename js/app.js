@@ -68,14 +68,14 @@ $(() => {
               $('.submit-form').hide()
               // console.log('correct!');
               //show the win results
-              $correctAnswer.toggle()
+              $correctAnswer.show()
             } else {
               //change the text of results name to current pokemon's name
               $('.name').text(`${pkmName}.`);
               //hide the submit answer area
               $('.submit-form').hide()
               //toggle the lose message
-              $wrongAnswer.toggle()
+              $wrongAnswer.show()
             }
           }
         //give the submit area a listener that checks for match
