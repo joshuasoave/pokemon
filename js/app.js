@@ -13,13 +13,14 @@ $(() => {
         //reset the form
         $('form').trigger('reset')
         //hide the previous message
-        $('.correct-answer').hide()
-        $('.wrong-answer').hide()
+        $('#correct-answer').hide()
+        $('#wrong-answer').hide()
         //remove the previous abilities and types
         $('#type-h3').siblings().remove()
         $('#ability-h3').siblings().remove()
         // console.log(data);
         $('.submit-form').show()
+        $('.hint-div').show()
         //change src of sprite to the selected pokemon
         $('img').attr("src", data.sprites.front_default)
         //change the name of selected pokemon
@@ -52,8 +53,8 @@ $(() => {
         //check if users input matches the pokemon name
         const checkMatch = (event) => {
             //hide the correct and wrong answer messages
-            const $correctAnswer = $('.correct-answer')
-            const $wrongAnswer = $('.wrong-answer')
+            const $correctAnswer = $('#correct-answer')
+            const $wrongAnswer = $('#wrong-answer')
 
             //set their displays to none
             $correctAnswer.css('display', 'none')
@@ -139,6 +140,15 @@ $(() => {
     //change the submit button to rocket class
     $('#submit-btn').removeClass('normal-submit')
     $('#submit-btn').addClass('rocket-submit')
+    //change the wtp button class
+    $('#randomizer').removeClass('normal-randomizer')
+    $('#randomizer').addClass('rocket-randomizer')
+    //remove the normal answer classes
+    $('#correct-answer').removeClass('correct-answer-normal')
+    $('#wrong-answer').removeClass('wrong-answer-normal')
+    //add  the rocket answer classes
+    $('#correct-answer').addClass('correct-answer-rocket')
+    $('#wrong-answer').addClass('wrong-answer-rocket')
     //hide rocket style button
     $('.team-rocket').hide()
     //show the normal style
@@ -172,6 +182,15 @@ $(() => {
     //change the submit button to normal class
     $('#submit-btn').removeClass('rocket-submit')
     $('#submit-btn').addClass('normal-submit')
+    //change the wtp button class
+    $('#randomizer').removeClass('rocket-randomizer')
+    $('#randomizer').addClass('normal-randomizer')
+    //remove the rocket answer classes
+    $('#correct-answer').removeClass('correct-answer-rocket')
+    $('#wrong-answer').removeClass('wrong-answer-rocket')
+    //add  the normal answer classes
+    $('#correct-answer').addClass('correct-answer-normal')
+    $('#wrong-answer').addClass('wrong-answer-normal')
     //hide noamral style button
     $('.normal-style').hide()
     //show the rocket style button
