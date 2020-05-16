@@ -10,6 +10,8 @@ $(() => {
       url: "https://pokeapi.co/api/v2/pokemon/" + number,
       type: "GET",
     }).then((data) => {
+        //reset the form
+        $('form').trigger('reset')
         //hide the previous message
         $('.correct-answer').hide()
         $('.wrong-answer').hide()
@@ -57,9 +59,10 @@ $(() => {
             $correctAnswer.css('display', 'none')
             $wrongAnswer.css('display', 'none')
 
-            event.preventDefault()
             //store the input as a variable
             const $userGuess = $('input').val()
+
+            event.preventDefault()
             // console.log($userGuess);
             // console.log(pkmName);;
             //lowercase the guess since data is
@@ -73,8 +76,7 @@ $(() => {
               // console.log('correct!');
               //show the win results
               $correctAnswer.show()
-              //reset the form
-              $('form').trigger('reset')
+
             } else {
               //change the text of results name to current pokemon's name
               $('.name').text(`${pkmName}.`);
@@ -82,9 +84,7 @@ $(() => {
               $('.submit-form').hide()
               //toggle the lose message
               $wrongAnswer.show()
-              //reset the form
-              $('form').trigger('reset')
-            }
+            }  //reset the form
           }
         //give the submit area a listener that checks for match
         $('form').on('submit', checkMatch)
