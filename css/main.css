@@ -1,39 +1,17 @@
-/* global variables for the game to work on mobile and desktop DONT EDIT*/
 
-.hint-modal {
-  display: none;
-}
-
-/* .submit-form {
-  display: none;
-} */
-
-.correct-answer {
-  display: none;
-}
-
-.wrong-answer {
-  display: none;
-}
-
-.name {
-  text-transform: capitalize;
-}
-
-
-.typing {
-  text-transform: capitalize;
-}
-
-.abilities {
-  text-transform: capitalize;
-}
 
 /*///////////////////*/
 /* mobile styling  */
 /*///////////////////*/
 
 @media only screen and (max-width: 600px) {
+
+  body{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    margin: 3em;
+  }
 
   #hint{
     background: #ffcb05;
@@ -65,6 +43,7 @@
     align-items: center;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 4em;
     border: 1px solid #3c5aa6;
     color: rgb(42, 117, 187);
     box-shadow: 5px 7px #3c5aa6;
@@ -75,6 +54,7 @@
     width: 70%;
     height: 60%;
     display: flex;
+    margin-top: 4em;
     flex-direction: column;
     justify-content: center;
     text-align: center;
@@ -84,6 +64,7 @@
     background: black;
     border: 2px solid rgba(256,0,10,1);
     color: white;
+    box-shadow: 5px 7px rgba(256,0,10,1);
   }
 
   .close-btn {
@@ -117,19 +98,65 @@
     box-shadow: 1px 1px whitesmoke;
   }
 
+  .team-rocket {
+    align-self: flex-end;
+    justify-content: flex-end;
+  }
+
+  .normal-style {
+    align-self: flex-end;
+    justify-content: flex-end;
+    display: none;
+  }
+
+  #rocket-mode {
+    background: black;
+    border: 2px solid white;
+    color: rgba(256,0,10,1);
+    font-size: 18px;
+    font-family: 'Fjalla One', sans-serif;
+    height: 35px;
+  }
+
+  #normal-mode {
+    background: #ffcb05;
+    border: 2px solid white;
+    color: #3c5aa6;
+    font-size: 18px;
+    font-family: 'Fjalla One', sans-serif;
+    height: 30px;
+    border: 2px solid #3c5aa6;
+  }
 
 }
 
-#rocket-mode {
-  background: black;
-  border: 2px solid white;
-  color: rgba(256,0,10,1);
-  font-size: 18px;
-  font-family: 'Fjalla One', sans-serif;
-  height: 30px;
+/* global variables for the game to work on mobile and desktop DONT EDIT*/
+
+.hint-modal {
+  display: none;
 }
 
-/* //team rocket
-background: rgba(256,0,10,1);
-border: 2px solid black;
-color: white; */
+/* .submit-form {
+  display: none;
+} */
+
+.correct-answer {
+  display: none;
+}
+
+.wrong-answer {
+  display: none;
+}
+
+.name {
+  text-transform: capitalize;
+}
+
+
+.typing {
+  text-transform: capitalize;
+}
+
+.abilities {
+  text-transform: capitalize;
+}

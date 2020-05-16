@@ -111,8 +111,24 @@ $(() => {
     //change the modal close class
     $('#close-btn').removeClass('close-btn')
     $('#close-btn').addClass('rocket-btn')
+    //hide rocket style button
+    $('.team-rocket').hide()
+    //show the normal style
+    $('.normal-style').show()
   }
 
+  const normalStyle = () => {
+    //change modal class to normal
+    $('#modal-text').removeClass('rocket-modal')
+    $('#modal-text').addClass('modal-textbox')
+    //change the modal close class
+    $('#close-btn').removeClass('rocket-btn')
+    $('#close-btn').addClass('close-btn')
+    //hide noamral style button
+    $('.normal-style').hide()
+    //show the rocket style button
+    $('.team-rocket').show()
+  }
 
       //give the whos that pokemon button a listener to   produce the random pokemon
   $('#randomizer').on('click', producePokemon)
@@ -122,6 +138,9 @@ $(() => {
   $('#close-btn').on('click', closeHint)
   //team rocket mode
   $('#rocket-mode').on('click', rocketStyle)
+  //normal mode
+  $('#normal-mode').on('click', normalStyle)
+
 
 
 
