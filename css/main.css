@@ -97,13 +97,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 100px;
+    height: 100%;
   }
 
   /* who's that pokemon normal button  */
   .normal-randomizer {
     background: #ffcb05;
     color: #3c5aa6;
-    width: 200px;
+    width: 250px;
     height: 70px;
     font-size: 26px;
     box-shadow: 3px 5px #3c5aa6;
@@ -116,7 +118,7 @@
   .rocket-randomizer {
     background: black;
     color: white;
-    width: 200px;
+    width: 250px;
     height: 70px;
     font-size: 26px;
     box-shadow: 3px 5px rgba(256,0,10,1);
@@ -172,6 +174,7 @@
     color: #3c5aa6;
     font-family: 'Fjalla One', sans-serif;
     font-size: 14px;
+    height: 30px;
     width: 60px;
     letter-spacing: .05em;
     border: 1px solid #3c5aa6;
@@ -206,7 +209,7 @@
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 4em;
+    margin-top: 2em;
     border: 1px solid #3c5aa6;
     color: rgb(42, 117, 187);
     box-shadow: 5px 7px #3c5aa6;
@@ -242,10 +245,13 @@
     color: #3c5aa6;
     font-size: 18px;
     font-family: 'Fjalla One', sans-serif;
-    height: 30px;
+    height: 35px;
+    width: 140px;
     border: 2px solid #3c5aa6;
     box-shadow: 1px 3px #3c5aa6;
-    margin-top: 13.5em;
+    position: fixed;
+    bottom: 1%;
+    right: 0;
   }
 
 
@@ -256,7 +262,7 @@
     width: 70%;
     height: 60%;
     display: flex;
-    margin-top: 4em;
+    margin-top: 2em;
     flex-direction: column;
     justify-content: center;
     text-align: center;
@@ -276,6 +282,7 @@
     color: white;
     font-family: 'Fjalla One', sans-serif;
     font-size: 14px;
+    height: 30px;
     width: 60px;
     letter-spacing: .05em;
     border: 1px solid rgba(256,0,10,1);
@@ -309,7 +316,9 @@
     font-family: 'Fjalla One', sans-serif;
     height: 35px;
     box-shadow: 1px 3px rgba(256,0,10,1);
-    margin-top: 13em;
+    position: fixed;
+    bottom: 1%;
+    right: 0;
   }
 
 
@@ -345,17 +354,17 @@
   }
 
   .normal-randomizer {
-    height: 300%;
-    width: 70%;
+    height: 120px;
+    width: 90%;
     font-size: 36px;
-    margin-left: 10%;
+    margin-left: auto;
   }
 
   .rocket-randomizer {
-    height: 300%;
-    width: 70%;
+    height: 120px;
+    width: 90%;
     font-size: 36px;
-    margin-left: 10%;
+    margin-left: auto;
   }
 
   .modal-textbox, .correct-answer-normal,
@@ -376,11 +385,6 @@
   #btm-text {
     margin-top: -1em;
   }
-
-  /* .current-pokemon {
-    height: 70%;
-    width: 70%;
-  } */
 
 
 }
