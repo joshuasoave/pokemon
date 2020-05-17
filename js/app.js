@@ -114,6 +114,8 @@ $(() => {
   }
 
   const rocketStyle = () => {
+    //change the h1 text
+    $('h1').text('Team Rocket Takeover')
     //remove the normal class from header and nav
     $('header').removeClass('normal-header')
     $('nav').removeClass('normal-nav')
@@ -156,6 +158,8 @@ $(() => {
   }
 
   const normalStyle = () => {
+    //normal h1 text
+    $('h1').text("Who's That Pokemon?")
     //remove the rocket class from header and nav
     $('header').removeClass('rocket-header')
     $('nav').removeClass('rocket-nav')

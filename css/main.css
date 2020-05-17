@@ -206,7 +206,6 @@
   .close-btn {
     align-self: flex-end;
     margin: 1em;
-    margin-bottom: -1em;
     height: 40px;
     width: 70px;
     background: #ffcb05;
@@ -275,7 +274,6 @@
   .rocket-btn {
     align-self: flex-end;
     margin: 1em;
-    margin-bottom: -1em;
     height: 40px;
     width: 70px;
     background: black;
@@ -325,6 +323,14 @@
 }
 
 .wrong-answer-normal {
+  display: none;
+}
+
+.correct-answer-rocket {
+  display: none;
+}
+
+.wrong-answer-rocket {
   display: none;
 }
 
