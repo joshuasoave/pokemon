@@ -21,8 +21,18 @@ $(() => {
         // console.log(data);
         $('.submit-form').show()
         $('.hint-div').show()
+        //remove the old image
+        $('.current-pokemon').children().remove()
+        //create a new image
+        const $pkmnImg = $('<img>')
         //change src of sprite to the selected pokemon
-        $('img').attr("src", data.sprites.front_default)
+        $pkmnImg.attr("src", data.sprites.front_default)
+        //give it an id of sprite
+        $pkmnImg.attr("id", "pkmn-sprite")
+        //append it to the current pokemon container
+        $('.current-pokemon').append($pkmnImg)
+        //give the same image src to the hint sprite
+        $('#hint-sprite').attr('src', data.sprites.front_default)
         //change the name of selected pokemon
         let pkmName = data.name
         // console.log(pkmName);
