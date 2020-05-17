@@ -115,7 +115,7 @@ $(() => {
 
   const rocketStyle = () => {
     //change the h1 text
-    $('h1').text('Team Rocket Takeover')
+    $('h1').text('Team Rocket Takeover!')
     //remove the normal class from header and nav
     $('header').removeClass('normal-header')
     $('nav').removeClass('normal-nav')
