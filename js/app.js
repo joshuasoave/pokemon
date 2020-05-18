@@ -1,5 +1,9 @@
 $(() => {
 
+  //inits the scoring ability
+  let totalGuesses = 0
+  let score = 0
+
   const producePokemon = () => {
 
       //randomize for the amount of pokemon
@@ -60,6 +64,7 @@ $(() => {
           $('.abilities').append($newAbility)
           //
         }
+
         //check if users input matches the pokemon name
         const checkMatch = (event) => {
             //hide the correct and wrong answer messages
@@ -89,7 +94,12 @@ $(() => {
               $correctAnswer.show()
               //scroll down to the answer div
               $('html').scrollTop(1000)
-
+              //increase the score
+              score = score + 1
+              //increase the total guesses
+              totalGuesses = totalGuesses + 1
+              //change the score text
+              $('#current-score').text(`${score}/${totalGuesses}`)
             } else {
               //change the text of results name to current pokemon's name
               $('.name').text(`${pkmName}.`);
@@ -99,7 +109,10 @@ $(() => {
               $wrongAnswer.show()
               //scroll down to the answer div
               $('html').scrollTop(1000)
-            }  //reset the form
+              //increase the total guesses
+              // totalGuesses = totalGuesses + 1
+              // console.log(totalGuesses);
+            }
           }
         //give the submit area a listener that checks for match
         $('form').on('submit', checkMatch)
