@@ -16,6 +16,8 @@ $(() => {
     }).then((data) => {
         //increase the total guesses
         totalGuesses = totalGuesses + 1
+        //scroll down the screen to the pokemon
+        $('html').scrollTop(2000)
         //reset the form
         $('form').trigger('reset')
         //hide the previous message
