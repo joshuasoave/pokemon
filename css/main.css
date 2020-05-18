@@ -445,6 +445,12 @@
     font-size: 22px;
   }
 
+  #rocket-mode, #normal-mode {
+    height: 50px;
+    font-size: 22px;
+    width: 200px;
+  }
+
 
 }
 
