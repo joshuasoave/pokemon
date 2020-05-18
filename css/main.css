@@ -266,7 +266,6 @@
 /* ROCKET MOBILE HINTS  */
 
   .rocket-modal, .correct-answer-rocket, .wrong-answer-rocket {
-    background: white;
     width: 70%;
     height: 60%;
     display: flex;
@@ -359,6 +358,7 @@
     width: 250px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: -2em;
   }
 
   .current-pkm {
@@ -366,18 +366,12 @@
     width: 100%;
   }
 
-  .normal-randomizer {
-    height: 120px;
+  .normal-randomizer, .rocket-randomizer {
+    height: 90px;
     width: 90%;
     font-size: 36px;
     margin-left: auto;
-  }
-
-  .rocket-randomizer {
-    height: 120px;
-    width: 90%;
-    font-size: 36px;
-    margin-left: auto;
+    margin-top: 1em;
   }
 
   .modal-textbox, .correct-answer-normal,
@@ -389,14 +383,34 @@
     font-size: 36px;
   }
 
+  .rocket-modal, .correct-answer-rocket, .wrong-answer-rocket {
+    width: 50%;
+    height: 60%;
+    margin-top: 4em;
+    font-size: 36px;
+  }
+
+
   #about-text p {
     margin-left: 1.5em;
     margin-right: 1.5em;
     padding: 1em;
+    font-size: 32px;
   }
 
   #btm-text {
     margin-top: -1em;
+  }
+
+  .correct-answer-normal,
+  .wrong-answer-normal {
+    margin-top: 0;
+    width: 65%;
+  }
+
+  .correct-answer-rocket, .wrong-answer-rocket {
+    margin-top: 0;
+    width: 65%;
   }
 
 
