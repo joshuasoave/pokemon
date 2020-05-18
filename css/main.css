@@ -328,6 +328,15 @@
     right: 0;
   }
 
+  /* fixing wrong/right answer textbox */
+
+  .correct-answer-rocket, .wrong-answer-rocket,
+  .correct-answer-normal,
+  .wrong-answer-normal {
+    font-size: 22px;
+    width: 70%;
+  }
+
 
 /* ////////////////////////// */
   /* desktop styling  */

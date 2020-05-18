@@ -87,6 +87,8 @@ $(() => {
               // console.log('correct!');
               //show the win results
               $correctAnswer.show()
+              //scroll down to the answer div
+              $('html').scrollTop(1000)
 
             } else {
               //change the text of results name to current pokemon's name
@@ -95,6 +97,8 @@ $(() => {
               $('.submit-form').hide()
               //toggle the lose message
               $wrongAnswer.show()
+              //scroll down to the answer div
+              $('html').scrollTop(1000)
             }  //reset the form
           }
         //give the submit area a listener that checks for match
