@@ -404,7 +404,7 @@
     margin-left: 1.5em;
     margin-right: 1.5em;
     padding: 1em;
-    font-size: 32px;
+    font-size: 36px;
   }
 
   #btm-text {
@@ -420,6 +420,18 @@
   .correct-answer-rocket, .wrong-answer-rocket {
     margin-top: 0;
     width: 65%;
+  }
+
+  #modal-text {
+    height: 80%;
+    margin-top: 1em;
+    font-size: 26px;
+  }
+
+  #hint-sprite {
+    height: 150px;
+    width: 150px;
+    margin-bottom: -1em;
   }
 
 
