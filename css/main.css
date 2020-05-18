@@ -324,22 +324,24 @@
     height: 35px;
     box-shadow: 1px 3px rgba(256,0,10,1);
     position: fixed;
-    bottom: 1%;
+    bottom: 0;
     right: 0;
   }
 
   #score {
     font-size: 18px;
     font-family: 'Fjalla One', sans-serif;
-    height: 40px;
-    width: 100px;
+    position: absolute;
+    top: 35%;
+    left: 2%;
+  }
+
+  #score-text {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 1em;
-    position: relative;
-    top: 20%;
-    left: 0;
+    height: 30px;
+    width: 100px;
   }
 
   .normal-score {
@@ -353,6 +355,10 @@
     background: rgba(256,0,10,1);
     border: 2px solid black;
     color: black;
+  }
+
+  #current-score {
+    margin: .5em;
   }
 
 
@@ -409,7 +415,7 @@
     width: 90%;
     font-size: 36px;
     margin-left: auto;
-    margin-top: 1em;
+    margin-top: 2em;
   }
 
   .modal-textbox, .correct-answer-normal,
@@ -528,5 +534,9 @@
 }
 
 .hint-div {
+  display: none;
+}
+
+#score {
   display: none;
 }

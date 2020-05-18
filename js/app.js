@@ -14,6 +14,8 @@ $(() => {
       url: "https://pokeapi.co/api/v2/pokemon/" + number,
       type: "GET",
     }).then((data) => {
+        //increase the total guesses
+        totalGuesses = totalGuesses + 1
         //reset the form
         $('form').trigger('reset')
         //hide the previous message
@@ -67,6 +69,8 @@ $(() => {
 
         //check if users input matches the pokemon name
         const checkMatch = (event) => {
+            //show the score div
+            $('#score').show()
             //hide the correct and wrong answer messages
             const $correctAnswer = $('#correct-answer')
             const $wrongAnswer = $('#wrong-answer')
@@ -96,8 +100,6 @@ $(() => {
               $('html').scrollTop(1000)
               //increase the score
               score = score + 1
-              //increase the total guesses
-              totalGuesses = totalGuesses + 1
               //change the score text
               $('#current-score').text(`${score}/${totalGuesses}`)
             } else {
@@ -109,9 +111,8 @@ $(() => {
               $wrongAnswer.show()
               //scroll down to the answer div
               $('html').scrollTop(1000)
-              //increase the total guesses
-              // totalGuesses = totalGuesses + 1
-              // console.log(totalGuesses);
+              //change the score text
+              $('#current-score').text(`${score}/${totalGuesses}`)
             }
           }
         //give the submit area a listener that checks for match
@@ -179,8 +180,8 @@ $(() => {
     $('#correct-answer').addClass('correct-answer-rocket')
     $('#wrong-answer').addClass('wrong-answer-rocket')
     //change the score class
-    $('#score').removeClass('normal-score')
-    $('#score').addClass('rocket-score')
+    $('#score-text').removeClass('normal-score')
+    $('#score-text').addClass('rocket-score')
     //hide rocket style button
     $('.team-rocket').hide()
     //show the normal style
@@ -226,8 +227,8 @@ $(() => {
     $('#correct-answer').addClass('correct-answer-normal')
     $('#wrong-answer').addClass('wrong-answer-normal')
     //change the score style
-    $('#score').removeClass('rocket-score')
-    $('#score').addClass('normal-score')
+    $('#score-text').removeClass('rocket-score')
+    $('#score-text').addClass('normal-score')
     //hide noamral style button
     $('.normal-style').hide()
     //show the rocket style button
