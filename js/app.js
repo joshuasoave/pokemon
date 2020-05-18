@@ -80,13 +80,10 @@ $(() => {
             $wrongAnswer.css('display', 'none')
 
             //store the input as a variable
-            const $userGuess = $('input').val()
-
+            const $userGuess = $('input').val().toLowerCase()
+            //save the original guess incase they get it wrong
+            const $displayGuess = $('input').val()
             event.preventDefault()
-            // console.log($userGuess);
-            // console.log(pkmName);;
-            //lowercase the guess since data is
-            $userGuess.toLowerCase()
             //check to see if the guesses match
             if($userGuess === pkmName) {
               //change the text of results name to current pokemon's name
@@ -105,6 +102,8 @@ $(() => {
             } else {
               //change the text of results name to current pokemon's name
               $('.name').text(`${pkmName}.`);
+              //type in the user's input to show the wrong guess
+              $('.user-guess').text(`${$displayGuess}!`)
               //hide the submit answer area
               $('.submit-form').hide()
               //toggle the lose message
