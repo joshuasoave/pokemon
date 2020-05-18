@@ -4,8 +4,6 @@
 /* mobile styling  */
 /*///////////////////*/
 
-/* @media only screen and (min-width: 600px) { */
-
   .normal-body{
     height: 90vh;
     display: flex;
@@ -46,6 +44,7 @@
     margin-bottom: 0;
     background: #3c5aa6;
     border: 2px solid #3c5aa6;
+    font-size: 18px;
   }
 
   .normal-nav a {
@@ -80,6 +79,7 @@
     margin-bottom: 0;
     background: rgba(256,0,10,1);
     border: 2px solid whitesmoke;
+    font-size: 18px;
   }
 
   .rocket-nav a {
@@ -164,6 +164,14 @@
 
   .hint-modal img {
     margin-bottom: 0;
+  }
+
+  /* about modal text size  */
+
+  #about-text p {
+    font-size: 24px;
+    margin-left: 1.6em;
+    margin-right: 1.6em;
   }
 
 
@@ -347,10 +355,15 @@
   }
 
   #pkmn-sprite {
-    height: 150%;
-    width: 150%;
+    height: 250px;
+    width: 250px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .current-pkm {
+    height: auto;
+    width: 100%;
   }
 
   .normal-randomizer {
