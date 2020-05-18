@@ -165,6 +165,9 @@ $(() => {
     //add  the rocket answer classes
     $('#correct-answer').addClass('correct-answer-rocket')
     $('#wrong-answer').addClass('wrong-answer-rocket')
+    //change the score class
+    $('#score').removeClass('normal-score')
+    $('#score').addClass('rocket-score')
     //hide rocket style button
     $('.team-rocket').hide()
     //show the normal style
@@ -209,6 +212,9 @@ $(() => {
     //add  the normal answer classes
     $('#correct-answer').addClass('correct-answer-normal')
     $('#wrong-answer').addClass('wrong-answer-normal')
+    //change the score style
+    $('#score').removeClass('rocket-score')
+    $('#score').addClass('normal-score')
     //hide noamral style button
     $('.normal-style').hide()
     //show the rocket style button

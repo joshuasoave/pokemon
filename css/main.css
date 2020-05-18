@@ -328,6 +328,35 @@
     right: 0;
   }
 
+  #score {
+    font-size: 18px;
+    font-family: 'Fjalla One', sans-serif;
+    height: 40px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+    position: relative;
+    top: 20%;
+    left: 0;
+  }
+
+  .normal-score {
+    background: #3c5aa6;
+    color: white;
+    box-shadow: 3px 5px #ffcb05;
+  }
+
+  .rocket-score {
+    box-shadow: 3px 5px white;
+    background: rgba(256,0,10,1);
+    border: 2px solid black;
+    color: black;
+  }
+
+
+
   /* fixing wrong/right answer textbox */
 
   .correct-answer-rocket, .wrong-answer-rocket,
