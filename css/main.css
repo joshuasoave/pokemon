@@ -522,10 +522,10 @@
   }
 
   footer {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    width: 100%;
+    display: block;
+    width: 100vw;
+    margin-top: 1em;
+    padding-top: 200px;
   }
 
 
