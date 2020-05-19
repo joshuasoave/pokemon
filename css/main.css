@@ -475,13 +475,8 @@
 
   #modal-text {
     height: auto;
-    margin-top: 1em;
+    margin-top: 3em;
     font-size: 26px;
-  }
-
-  .hint-modal {
-    margin-top: auto;
-    margin-bottom: auto;
   }
 
   #hint-sprite {
