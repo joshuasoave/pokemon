@@ -473,9 +473,14 @@
     margin-bottom: 1em;
   }
 
+  .hint-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   #modal-text {
     height: auto;
-    margin-top: 3em;
     font-size: 26px;
   }
 
