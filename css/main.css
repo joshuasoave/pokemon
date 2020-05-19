@@ -474,7 +474,7 @@
   }
 
   #modal-text {
-    height: 80vh;
+    height: auto;
     margin-top: 1em;
     font-size: 26px;
   }
