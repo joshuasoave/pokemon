@@ -449,7 +449,7 @@
     display: flex;
   }
 
-  #close-abt {
+  #close-abt, #close-bt. {
     height: 50px;
     width: 90px;
     align-items: flex-end;
