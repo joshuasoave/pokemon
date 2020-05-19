@@ -540,51 +540,13 @@
 
 /* global variables for the game to work on mobile and desktop DONT EDIT*/
 
-.hint-modal {
+.hint-modal, .submit-form, .about-modal,
+.correct-answer-normal, .wrong-answer-normal,
+.correct-answer-rocket, .wrong-answer-rocket,
+.hint-div, #score {
   display: none;
 }
 
-.submit-form {
-  display: none;
-}
-
-.about-modal {
-  display: none;
-}
-
-.correct-answer-normal {
-  display: none;
-}
-
-.wrong-answer-normal {
-  display: none;
-}
-
-.correct-answer-rocket {
-  display: none;
-}
-
-.wrong-answer-rocket {
-  display: none;
-}
-
-.name {
+.name, .typing, .abilities {
   text-transform: capitalize;
-}
-
-
-.typing {
-  text-transform: capitalize;
-}
-
-.abilities {
-  text-transform: capitalize;
-}
-
-.hint-div {
-  display: none;
-}
-
-#score {
-  display: none;
 }
