@@ -479,6 +479,11 @@
     font-size: 26px;
   }
 
+  .hint-modal {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
   #hint-sprite {
     height: 150px;
     width: 150px;
