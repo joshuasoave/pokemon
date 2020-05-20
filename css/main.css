@@ -1,5 +1,3 @@
-
-
 /*///////////////////*/
 /* mobile styling  */
 /*///////////////////*/
@@ -99,7 +97,6 @@
     align-items: center;
     padding-bottom: 100px;
     height: 100%;
-    position: relative;
   }
 
   /* who's that pokemon normal button  */
@@ -462,14 +459,16 @@
   }
 
   .correct-answer-normal,
-  .wrong-answer-normal,
-  .correct-answer-rocket,
-  .wrong-answer-rocket {
+  .wrong-answer-normal {
     margin-top: 0;
     width: 65%;
-    margin-bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
+    margin-bottom: 1em;
+  }
+
+  .correct-answer-rocket, .wrong-answer-rocket {
+    margin-top: 0;
+    width: 65%;
+    margin-bottom: 1em;
   }
 
   .hint-modal {
@@ -522,34 +521,57 @@
     width: 150px;
   }
 
-  footer {
-    display: block;
-    width: 100vw;
-    margin-top: 1em;
-    padding-top: 200px;
-    height: 3em;
-    position: absolute;
-  }
-
-
-  #rocket-mode, #normal-mode {
-    font-size: 24px;
-    height: 40px;
-  }
-
 
 }
 
 
 /* global variables for the game to work on mobile and desktop DONT EDIT*/
 
-.hint-modal, .submit-form, .about-modal,
-.correct-answer-normal, .wrong-answer-normal,
-.correct-answer-rocket, .wrong-answer-rocket,
-.hint-div, #score {
+.hint-modal {
   display: none;
 }
 
-.name, .typing, .abilities {
+.submit-form {
+  display: none;
+}
+
+.about-modal {
+  display: none;
+}
+
+.correct-answer-normal {
+  display: none;
+}
+
+.wrong-answer-normal {
+  display: none;
+}
+
+.correct-answer-rocket {
+  display: none;
+}
+
+.wrong-answer-rocket {
+  display: none;
+}
+
+.name {
   text-transform: capitalize;
+}
+
+
+.typing {
+  text-transform: capitalize;
+}
+
+.abilities {
+  text-transform: capitalize;
+}
+
+.hint-div {
+  display: none;
+}
+
+#score {
+  display: none;
 }
