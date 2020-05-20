@@ -265,7 +265,5 @@ $(() => {
   $('#close-abt').on('click', closeAbout)
 
 
-
-
       //end of on doc load
 })
