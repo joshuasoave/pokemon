@@ -17,7 +17,7 @@ $(() => {
         //increase the total guesses
         totalGuesses = totalGuesses + 1
         //scroll down the screen to the pokemon
-        $('html').scrollTop(2000)
+        // $('html').scrollTop(2000)
         //reset the form
         $('form').trigger('reset')
         //hide the previous message
@@ -96,7 +96,7 @@ $(() => {
               //show the win results
               $correctAnswer.show()
               //scroll down to the answer div
-              $('html').scrollTop(1000)
+              // $('html').scrollTop(1000)
               //increase the score
               score = score + 1
               //change the score text
@@ -111,7 +111,7 @@ $(() => {
               //toggle the lose message
               $wrongAnswer.show()
               //scroll down to the answer div
-              $('html').scrollTop(1000)
+              // $('html').scrollTop(1000)
               //change the score text
               $('#current-score').text(`${score}/${totalGuesses}`)
             }
@@ -263,6 +263,8 @@ $(() => {
   $('#about-link').on('click', displayAbout)
   //close about listener
   $('#close-abt').on('click', closeAbout)
+
+
 
 
       //end of on doc load
