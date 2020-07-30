@@ -1,4 +1,3 @@
-# joshuasoave.github.io
 ## Who's That Pokemon?
 by: Joshua Soave
 
