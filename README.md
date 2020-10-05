@@ -1,8 +1,7 @@
 ## Who's That Pokemon?
 by: Joshua Soave
 
-![https://i.imgur.com/CGWxRju.png](pokemon lugia and the input bar to guess it's name)
-
+![pokemon lugia and the input bar to guess it's name](https://i.imgur.com/CGWxRju.png)
 ## Intro
 Pokemon is a video game created by Game Freak, Nintendo, and The Pokemon Company.
 
